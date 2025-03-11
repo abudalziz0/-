@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>غرفة السعودية - شات نخبة العرب</title>
+
+    <!-- الروابط الخارجية -->
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            font-family: 'Changa', sans-serif;
+            background: url('img/bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+        }
+
+        .main-header h1 {
+            color: #ffd700;
+            font-size: 2.5rem;
+        }
+
+        .chat-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+
+        .chat-box {
+            background: rgba(255, 255, 255, 0.1);
+            height: 300px;
+            overflow-y: auto;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: left;
+        }
+
+        .message {
+            background: #ffd700;
+            color: black;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+
+        .chat-input {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .chat-input input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .chat-input button {
+            background: #ffd700;
+            border: none;
+            padding: 10px;
+            color: black;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .footer {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ✅ الهيدر -->
+    <header class="main-header">
+        <h1>🇸🇦 غرفة السعودية</h1>
+        <p>دردشة شات نخبة العرب - ملتقى السعوديين</p>
+    </header>
+
+    <!-- ✅ صندوق الدردشة -->
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+            <div class="message">🇸🇦 مرحبًا بك في غرفة السعودية!</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-message" placeholder="اكتب رسالتك هنا...">
+            <button onclick="sendMessage()">إرسال</button>
+        </div>
+    </div>
+
+    <!-- ✅ التذييل -->
+    <footer class="footer">
+        <p>📢 جميع الحقوق محفوظة © 2025 - شات نخبة العرب</p>
+        <p>🏠 <a href="index.html">العودة للرئيسية</a></p>
+    </footer>
+
+    <script>
+        function sendMessage() {
+            let chatBox = document.getElementById("chat-box");
+            let userInput = document.getElementById("user-message").value;
+            if (userInput.trim() !== "") {
+                chatBox.innerHTML += `<div class="message">${userInput}</div>`;
+                document.getElementById("user-message").value = "";
+                chatBox.scrollTop = chatBox.scrollHeight;
+            }
+        }
+    </script>
+
+</body>
+</html>

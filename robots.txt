@@ -1,0 +1,83 @@
+<!doctype html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>شات نخبة العرب | دردشة للجوال | شات كمبيوتر | أكبر تجمع خليجي</title>
+    <meta content="شات نخبة العرب، دردشة كتابية، شات للجوال، شات خليجي، شات النخبة، دردشة عربية راقية، شات السعودية، شات عمان، شات قطر، شات الكويت، شات البحرين، شات العراق" name="description">
+    <meta content="شات نخبة العرب، دردشة عربية، شات النخبة، دردشة كتابية، شات خليجي، شات جوال، شات بدون تسجيل، شات النخبة الخليجية، شات النخبة العربية، شات راقي" name="keywords">
+    <link href="https://www.nokhbat-alarab.com/images/favicon.ico" rel="shortcut icon">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo" alt="شات نخبة العرب"></div>
+        <ul id="nav">
+            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li><a href="https://top4top.io/"><i class="far fa-image"></i> رفع الصور</a></li>
+            <li><a href="index.html#items"><i class="fa fa-list" aria-hidden="true"></i> القوانين</a></li>
+            <li><a href="index.html#terms"><i class="fa fa-list" aria-hidden="true"></i> سياسة الخصوصية</a></li>
+        </ul>
+        
+        <a href="room/index.html" class="room"></a>
+        <a href="https://nokhbat-alarab.com/room1/" class="room1"></a>
+        <a href="room7/index.html" class="room2"></a>
+        <a href="room6/index.html" class="room7"></a>
+        <a href="https://nokhbat-alarab.com/room11/" class="room99"></a>
+
+        <div class="menu_footer">
+            <ul id="fot">
+                <li><a href="index.html#contact"><span lang="ar-sa"><i class="far fa-envelope"></i> راسلنا</span></a></li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <h2>Design by <a href="https://api.whatsapp.com/send/?phone=966533344860&text&app_absent=0" style="color:#00f">2030dev <i class="fa-whatsapp fab" style="color:#00b71f"></i></a></h2>
+        </div>
+    </div>
+
+    <!-- ✅ قسم القوانين -->
+    <div class="popup" id="items">
+        <div class="popup__container">
+            <a href="index.html#" class="popup__close"><span class="screen-reader">إغلاق</span></a>
+            <div class="popup__content">
+                <h2 style="font-size:large"><i class="fa fa-list" aria-hidden="true"></i> القوانين</h2>
+                <h1 class="well">
+                    <p>أهلًا وسهلًا بك عزيزي الزائر، بوجودك يرتقي الشات، الرجاء الالتزام بالقوانين التالية وعدم مخالفتها:</p>
+                    <p>✅ عدم تنزيل أي حساب خاص بك سواء كيك أو غيره من حسابات التواصل.</p>
+                    <p>✅ عدم سب الدول أو العنصرية.</p>
+                    <p>✅ عدم إهانة أي ديانة أو مذهب، واحترام الجميع.</p>
+                    <p>✅ عدم ذكر أسماء برامج أخرى أو دردشات أخرى.</p>
+                    <p>✅ عدم تكرار الكلام أو إضافة فيسات كثيرة لأن ذلك يسبب تعليق الشات.</p>
+                    <p>✅ عدم السب أو الشتم أو التعدي على أي زائر.</p>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ✅ قسم سياسة الخصوصية -->
+    <div class="popup" id="terms">
+        <div class="popup__container">
+            <a href="index.html#" class="popup__close"><span class="screen-reader">إغلاق</span></a>
+            <div class="popup__content">
+                <h2 style="font-size:large"><i class="fa fa-list" aria-hidden="true"></i> سياسة الخصوصية</h2>
+                <h1 class="well">
+                    <p>🔹 تطبيق وموقع دردشة نخبة العرب هو موقع تواصل اجتماعي هادف للدردشة والتعارف، ويقدم محتوى مميز.</p>
+                    <p>🔹 يُمنع عرض أو تحميل الصور والنصوص المخلة بالأدب والأخلاق.</p>
+                    <p>🔹 يُمنع استخدام الألفاظ الجنسية أو أي وسيلة إغراء في أي صفحة.</p>
+                    <p>🔹 نحافظ على خصوصية الأعضاء والزوار، ولا نسمح بالترهيب أو التخويف داخل الشات.</p>
+                    <p>🔹 يُمنع التعرض بالسب أو الإهانة أو التشهير بأي عضو أو زائر.</p>
+                    <p>🔹 كل ما ينشر من قبل الأعضاء والزوار هو مسؤوليتهم الشخصية.</p>
+                    <p>🔹 نستخدم برمجيات قانونية للحفاظ على أمن الموقع وخصوصية المستخدمين.</p>
+                    <p>🔹 إدارة الموقع تختار المشرفين والإداريين وفق معايير أخلاقية واضحة.</p>
+                    <p>🔹 أي خرق لهذه القوانين يؤدي إلى حظر المستخدم بدون سابق إنذار.</p>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ✅ سكريبت الحماية -->
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>راسلنا - شات نخبة العرب</title>
+
+    <!-- الروابط الخارجية -->
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        body {
+            font-family: 'Changa', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #8b0000;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button {
+            background: #8b0000;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #5a0000;
+        }
+
+        .footer {
+            margin-top: 30px;
+            padding: 15px;
+            background: #8b0000;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ✅ رأس الصفحة -->
+    <header class="main-header">
+        <h1>راسلنا</h1>
+        <p>تواصل معنا لأي استفسار أو اقتراح!</p>
+    </header>
+
+    <!-- ✅ نموذج الاتصال -->
+    <div class="container">
+        <h2>📩 نموذج التواصل</h2>
+        <form action="send_message.php" method="POST">
+            <input type="text" name="name" placeholder="الاسم الكامل" required>
+            <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+            <textarea name="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+
+        <h3>📞 https://www.snapchat.com/add/bx90_9?share_id=5TKcSrMrc3M&locale=ar-EG</h3>
+        <p>✉️ البريد الإلكتروني: <a href="mailto:support@nokhbat-chat.com">sa55aau6@gmail.com</a></p>
+        <p>📍 العنوان: الخليج العربي</p>
+    </div>
+
+    <!-- ✅ تذييل الصفحة -->
+    <footer class="footer">
+        <p>📢 جميع الحقوق محفوظة © 2025 - شات نخبة العرب</p>
+        <p>🏠 <a href="index.html" style="color: #ffd700;">العودة للرئيسية</a></p>
+    </footer>
+
+</body>
+</html>
