@@ -3,125 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🇸🇦 غرفة السعودية - دردشة نخبة العرب</title>
-
-    <!-- استدعاء ملف التنسيق الأساسي -->
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/chat.js"></script>
-
+    <title>غرفة السعودية - 🇸🇦  </title>
+    
+    <!-- توحيد الروابط مع الصفحة الرئيسية -->
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
     <style>
-        body {
-            background: url('../img/oman.jpg') no-repeat center center fixed;
-            background-size: cover;
-            font-family: 'Changa', sans-serif;
-            color: white;
+        :root {
+            --primary-color: #8b0000;
+            --secondary-color: #ffd700;
+            --background: #1a1a1a;
         }
 
+        /* أنماط متوافقة مع الصفحة الرئيسية */
         .main-header {
-            background: rgba(0, 0, 0, 0.7);
+            background: var(--primary-color);
             padding: 1.5rem;
-            text-align: center;
-            border-bottom: 3px solid #ffd700;
+            border-bottom: 3px solid var(--secondary-color);
         }
 
-        .main-header h1 {
-            font-size: 2.5rem;
-            color: #ffd700;
+        .room-content {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
         }
 
-        .chat-container {
-            width: 90%;
-            max-width: 600px;
-            background: rgba(0, 0, 0, 0.8);
-            margin: 20px auto;
-            padding: 20px;
+        /* تنسيق أزرار الروابط */
+        .room-link {
+            display: block;
+            background: var(--secondary-color);
+            color: #000;
+            padding: 1rem;
+            margin: 1rem 0;
             border-radius: 10px;
+            text-decoration: none;
+            transition: 0.3s;
         }
 
-        .chat-box {
-            height: 400px;
-            overflow-y: auto;
-            padding: 10px;
-            border-radius: 5px;
-            background: rgba(255, 255, 255, 0.1);
-        }
-
-        .chat-input {
-            display: flex;
-            margin-top: 10px;
-        }
-
-        .chat-input input {
-            flex: 1;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            background: white;
-            color: black;
-        }
-
-        .chat-input button {
-            background: #ffd700;
-            border: none;
-            padding: 10px;
-            color: black;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .footer {
-            background: rgba(0, 0, 0, 0.7);
-            color: #ddd;
-            font-size: 12px;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-
-        .footer a {
-            color: #ffd700;
-            text-decoration: underline;
+        .room-link:hover {
+            background: #fff;
+            color: var(--primary-color);
         }
     </style>
 </head>
 
 <body>
-
-    <!-- ✅ الهيدر -->
+    <!-- الهيدر الموحد -->
     <header class="main-header">
         <h1>🇸🇦 غرفة السعودية</h1>
-        <p>دردشة نخبة العرب - عمان</p>
+        <p>دردشة - النخبة الراقية</p>
     </header>
 
-    <!-- ✅ الدردشة -->
-    <div class="chat-container">
-        <div class="chat-box" id="chat-box">
-            <div class="message">🎉 مرحبًا بك في غرفة عُمان! ابدأ المحادثة الآن.</div>
-        </div>
-        <div class="chat-input">
-            <input type="text" id="user-message" placeholder="اكتب رسالتك هنا...">
-            <button onclick="sendMessage()">إرسال</button>
+    <!-- محتوى الغرفة -->
+    <div class="room-content">
+        <!-- روابط الخدمات -->
+        <a href="https://encycolorpedia.com/named" class="room-link">
+            🎨 اختيار الألوان
+        </a>
+
+        <a href="https://top4top.io/index.php" class="room-link">
+            📸 رفع الصور
+        </a>
+
+        <a href="https://flh-q.com/noos/" class="room-link">
+            🌟 رمزيات مميزة
+        </a>
+
+        <!-- إطار الدردشة -->
+        <div class="chat-frame">
+            <!-- BEGIN CBOX - www.cbox.ws - v4.3 -->
+            <div id="cboxdiv" style="position: relative; margin: 0 auto; width: 100%;">
+                <div style="position: relative; height: 220px; overflow: hidden;">
+                    <iframe src="https://www5.cbox.ws/box/?boxid=940030&boxtag=r8fUa0&sec=form" allow="autoplay" frameborder="0" width="100%" height="100%"></iframe>
+                </div>
+                <div style="position: relative; height: 600px; overflow-y: auto;">
+                    <iframe src="https://www5.cbox.ws/box/?boxid=940030&boxtag=r8fUa0&sec=main" frameborder="0" width="100%" height="100%"></iframe>
+                </div>
+            </div>
+            <!-- END CBOX -->
         </div>
     </div>
 
-    <!-- ✅ التذييل -->
+    <!-- التذييل الموحد -->
     <footer class="footer">
-        <p>✉️ <a href="../contact.html">راسلنا</a></p>
+        <p>✉️ <a href="contact.html">راسلنا</a></p>
         <p>📢 تصميم بواسطة <a href="#">2030dev</a></p>
     </footer>
-
-    <!-- ✅ سكريبت الإرسال -->
-    <script>
-        function sendMessage() {
-            let chatBox = document.getElementById("chat-box");
-            let userInput = document.getElementById("user-message").value;
-            if (userInput.trim() !== "") {
-                chatBox.innerHTML += `<div class="message">${userInput}</div>`;
-                document.getElementById("user-message").value = "";
-                chatBox.scrollTop = chatBox.scrollHeight;
-            }
-        }
-    </script>
-
 </body>
 </html>
