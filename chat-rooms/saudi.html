@@ -3,92 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>غرفة السعودية - 🇸🇦  </title>
-    
-    <!-- توحيد الروابط مع الصفحة الرئيسية -->
-    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
+    <title>🇸🇦 غرفة السعودية</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/chat.js"></script>
+
     <style>
-        :root {
-            --primary-color: #8b0000;
-            --secondary-color: #ffd700;
-            --background: #1a1a1a;
+        body {
+            background: url('../img/saudi.jpg') no-repeat center center fixed;
+            background-size: cover;
         }
 
-        /* أنماط متوافقة مع الصفحة الرئيسية */
-        .main-header {
-            background: var(--primary-color);
-            padding: 1.5rem;
-            border-bottom: 3px solid var(--secondary-color);
-        }
-
-        .room-content {
+        .chat-box {
             max-width: 800px;
             margin: 2rem auto;
             padding: 1rem;
-        }
-
-        /* تنسيق أزرار الروابط */
-        .room-link {
-            display: block;
-            background: var(--secondary-color);
-            color: #000;
-            padding: 1rem;
-            margin: 1rem 0;
+            background: rgba(0, 0, 0, 0.8);
             border-radius: 10px;
-            text-decoration: none;
-            transition: 0.3s;
         }
 
-        .room-link:hover {
-            background: #fff;
-            color: var(--primary-color);
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
         }
     </style>
 </head>
 
 <body>
-    <!-- الهيدر الموحد -->
     <header class="main-header">
         <h1>🇸🇦 غرفة السعودية</h1>
-        <p>دردشة - النخبة الراقية</p>
+        <p>دردشة نخبة العرب - السعودية</p>
     </header>
 
-    <!-- محتوى الغرفة -->
-    <div class="room-content">
-        <!-- روابط الخدمات -->
-        <a href="https://encycolorpedia.com/named" class="room-link">
-            🎨 اختيار الألوان
-        </a>
-
-        <a href="https://top4top.io/index.php" class="room-link">
-            📸 رفع الصور
-        </a>
-
-        <a href="https://flh-q.com/noos/" class="room-link">
-            🌟 رمزيات مميزة
-        </a>
-
-        <!-- إطار الدردشة -->
-        <div class="chat-frame">
-            <!-- BEGIN CBOX - www.cbox.ws - v4.3 -->
-            <div id="cboxdiv" style="position: relative; margin: 0 auto; width: 100%;">
-                <div style="position: relative; height: 220px; overflow: hidden;">
-                    <iframe src="https://www5.cbox.ws/box/?boxid=940030&boxtag=r8fUa0&sec=form" allow="autoplay" frameborder="0" width="100%" height="100%"></iframe>
-                </div>
-                <div style="position: relative; height: 600px; overflow-y: auto;">
-                    <iframe src="https://www5.cbox.ws/box/?boxid=940030&boxtag=r8fUa0&sec=main" frameborder="0" width="100%" height="100%"></iframe>
-                </div>
-            </div>
-            <!-- END CBOX -->
-        </div>
+    <div class="chat-box">
+        <iframe src="https://www5.cbox.ws/box/?boxid=955819&boxtag=9wfg49" 
+                allowtransparency="yes" allow="autoplay">
+        </iframe>
     </div>
 
-    <!-- التذييل الموحد -->
     <footer class="footer">
-        <p>✉️ <a href="contact.html">راسلنا</a></p>
+        <p>✉️ <a href="../contact.html">راسلنا</a></p>
         <p>📢 تصميم بواسطة <a href="#">2030dev</a></p>
     </footer>
 </body>
