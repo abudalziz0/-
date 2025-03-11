@@ -3,91 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>شات نخبة العرب | دردشة عربية للنخبة</title>
+    <title>دردشة نخبة العرب</title>
 
-    <!-- الروابط الخارجية -->
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <style>
+        :root {
+            --primary-color: #8b0000;
+            --secondary-color: #ffd700;
+            --background: #1a1a1a;
+        }
+
         body {
-            font-family: 'Changa', sans-serif;
             background: url('img/bg.jpg') no-repeat center center fixed;
             background-size: cover;
+            font-family: 'Changa', sans-serif;
             color: white;
-            text-align: center;
-            margin: 0;
-            padding: 0;
         }
 
         .main-header {
-            background: rgba(0, 0, 0, 0.8);
-            padding: 20px;
+            background: var(--primary-color);
+            padding: 1.5rem;
+            text-align: center;
+            border-bottom: 3px solid var(--secondary-color);
         }
 
         .main-header h1 {
-            color: #ffd700;
             font-size: 2.5rem;
+            color: var(--secondary-color);
         }
 
         .rooms-container {
             max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
+            margin: 2rem auto;
+            padding: 1rem;
+            text-align: center;
         }
 
         .room-btn {
             display: block;
-            background: #ffd700;
+            background: var(--secondary-color);
             color: black;
-            padding: 15px;
-            margin: 10px;
+            padding: 1rem;
+            margin: 1rem 0;
             border-radius: 10px;
             text-decoration: none;
-            font-size: 1.2rem;
             font-weight: bold;
             transition: 0.3s;
         }
 
         .room-btn:hover {
             background: white;
-            color: #8b0000;
+            color: var(--primary-color);
         }
 
         .footer {
-            background: rgba(0, 0, 0, 0.8);
+            background: var(--primary-color);
+            color: #ddd;
+            font-size: 12px;
+            text-align: center;
             padding: 10px;
-            font-size: 14px;
-        }
-
-        .footer a {
-            color: #ffd700;
-            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
-
-    <!-- ✅ الهيدر -->
     <header class="main-header">
-        <h1>🔥 شات نخبة العرب 🔥</h1>
-        <p>أكبر منصة دردشة كتابية خليجية</p>
+        <h1>دردشة نخبة العرب</h1>
+        <p>منصة الحوار الهادف للنخبة الراقية</p>
     </header>
 
-    <!-- ✅ الغرف -->
     <div class="rooms-container">
-        <a href="chat-rooms/vip.html" class="room-btn">✨ القاعة الذهبية</a>
-        <a href="chat-rooms/moderators.html" class="room-btn">🛡️ غرفة الإشراف</a>
-        <a href="chat-rooms/general.html" class="room-btn">💬 الغرفة العامة</a>
-        <a href="contact.html" class="room-btn">✉️ تواصل معنا</a>
+        <a href="chat-rooms/oman.html" class="room-btn">🇴🇲 غرفة عُمان</a>
+        <a href="chat-rooms/saudi.html" class="room-btn">🇸🇦 غرفة السعودية</a>
+        <a href="chat-rooms/qatar.html" class="room-btn">🇶🇦 غرفة قطر</a>
+        <a href="chat-rooms/kuwait.html" class="room-btn">🇰🇼 غرفة الكويت</a>
+        <a href="chat-rooms/bahrain.html" class="room-btn">🇧🇭 غرفة البحرين</a>
+        <a href="chat-rooms/iraq.html" class="room-btn">🇮🇶 غرفة العراق</a>
     </div>
 
-    <!-- ✅ التذييل -->
     <footer class="footer">
-        <p>📢 جميع الحقوق محفوظة © 2025 - شات نخبة العرب</p>
-        <p>🏠 <a href="index.html">العودة للرئيسية</a></p>
+        <p>✉️ <a href="contact.html">راسلنا</a></p>
+        <p>📢 تصميم بواسطة <a href="#">2030dev</a></p>
     </footer>
-
 </body>
 </html>
