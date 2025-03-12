@@ -1,92 +1,133 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>دردشة نخبة العرب</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Grimoire - The #1 Coding GPT</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
     <style>
-        :root {
-            --primary-color: #8b0000;
-            --secondary-color: #ffd700;
-            --background: #1a1a1a;
-        }
-
         body {
-            background: url('img/bg.jpg') no-repeat center center fixed;
-            background-size: cover;
-            font-family: 'Changa', sans-serif;
-            color: white;
+            background-color: #000;
+            color: #0f0;
+            font-family: monospace;
+            margin: 0;
+            overflow: hidden; /* Hide scrollbars */
         }
 
-        .main-header {
-            background: var(--primary-color);
-            padding: 1.5rem;
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* Align items to the top */
+            height: 100vh; /* Full viewport height */
+            padding-top: 20px; /* Add some padding at the top */
+        }
+
+        .header {
             text-align: center;
-            border-bottom: 3px solid var(--secondary-color);
+            margin-bottom: 20px;
         }
 
-        .main-header h1 {
-            font-size: 2.5rem;
-            color: var(--secondary-color);
+        .header-image {
+            width: 100px; /* Adjust size as needed */
+            height: auto;
+            margin-bottom: 10px;
         }
 
-        .rooms-container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 1rem;
+        .header-title {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .header-tagline {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .stats {
+            font-size: 1em;
+            margin-bottom: 30px;
+        }
+
+        .testimonials {
             text-align: center;
+            margin-bottom: 40px;
         }
 
-        .room-btn {
-            display: block;
-            background: var(--secondary-color);
-            color: black;
-            padding: 1rem;
-            margin: 1rem 0;
-            border-radius: 10px;
-            text-decoration: none;
+        .testimonial {
+            margin-bottom: 15px;
+        }
+
+        .testimonial-quote {
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+
+        .testimonial-author {
             font-weight: bold;
-            transition: 0.3s;
+            color: #0ff; /* Neon blue for authors */
         }
 
-        .room-btn:hover {
-            background: white;
-            color: var(--primary-color);
+        .bottom-menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Spacing between menu items */
+            margin-top: auto; /* Push menu to the bottom */
+            margin-bottom: 20px;
         }
 
-        .footer {
-            background: var(--primary-color);
-            color: #ddd;
-            font-size: 12px;
-            text-align: center;
-            padding: 10px;
+        .menu-item {
+            color: #0f0;
+            text-decoration: none;
+            padding: 8px 15px;
+            border: 1px solid #0f0;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .menu-item:hover {
+            background-color: #0f0;
+            color: #000;
         }
     </style>
 </head>
-
 <body>
-    <header class="main-header">
-        <h1>دردشة نخبة العرب</h1>
-        <p>منصة الحوار الهادف للنخبة الراقية</p>
-    </header>
+    <div class="container">
+        <div class="header">
+            <img src="grimoire-logo.png" alt="Grimoire Logo" class="header-image">
+            <h1 class="header-title">Grimoire</h1>
+            <p class="header-tagline">The #1 Coding GPT is now a new app !</p>
+        </div>
 
-    <div class="rooms-container">
-        <a href="chat-rooms/oman.html" class="room-btn">🇴🇲 غرفة عُمان</a>
-        <a href="chat-rooms/saudi.html" class="room-btn">🇸🇦 غرفة السعودية</a>
-        <a href="chat-rooms/qatar.html" class="room-btn">🇶🇦 غرفة قطر</a>
-        <a href="chat-rooms/kuwait.html" class="room-btn">🇰🇼 غرفة الكويت</a>
-        <a href="chat-rooms/bahrain.html" class="room-btn">🇧🇭 غرفة البحرين</a>
-        <a href="chat-rooms/iraq.html" class="room-btn">🇮🇶 غرفة العراق</a>
+        <p class="stats">Over 2,000,000+ chats!</p>
+
+        <div class="testimonials">
+            <div class="testimonial">
+                <p class="testimonial-quote">"We love it"</p>
+                <p class="testimonial-author">- @chatGPTapp, OpenAI</p>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-quote">"It made a full fledged coder out of me from scratch"</p>
+                <p class="testimonial-author">- @banana_island_1</p>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-quote">"At this point, im only using ChatGPT for Grimoire"</p>
+                <p class="testimonial-author">- @Hououin Tyouma</p>
+            </div>
+        </div>
+
+        <div class="bottom-menu">
+            <a href="#" class="menu-item">Hello World</a>
+            <a href="#" class="menu-item">Link in Bio</a>
+            <a href="#" class="menu-item">Matrix Code Rain Animation</a>
+            <a href="#" class="menu-item">Microblog</a>
+            <a href="#" class="menu-item">Pong</a>
+            <a href="#" class="menu-item">Todo List</a>
+            <a href="#" class="menu-item">3d Game</a>
+            <a href="#" class="menu-item">Workout timer</a>
+            <a href="#" class="menu-item">HACK THE PLANET</a>
+        </div>
     </div>
-
-    <footer class="footer">
-        <p>✉️ <a href="contact.html">راسلنا</a></p>
-        <p>📢 تصميم بواسطة <a href="#">2030dev</a></p>
-    </footer>
+    <script src="js/script.js"></script>
 </body>
-</html>
+    </html>
